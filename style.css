@@ -53,7 +53,6 @@ table {
  */
 
 body {
-    width: 80%;
     margin: auto;
     font-size: 18px;
     line-height: 1.3em;
@@ -69,6 +68,10 @@ h1 {
 
 h2 {
     font-size: 1.3em;
+}
+
+h4 {
+    font-size: 1.25em;
 }
 
 a {
@@ -88,8 +91,48 @@ hgroup > h2 {
 }
 
 ul#contributors {
-    margin-left: 20px;
-    border-left: 5px solid #eee;
     padding-left: 10px;
     box-sizing: border-box;
+    font-weight: normal;
+    line-height: 1.4em;
+    text-transform: lowercase;
+}
+
+header { 
+	text-align: center;
+	border-bottom: 2px solid #1ab315; /* http://hexna.me/1AB315 */
+	padding-bottom: 12px;
+}
+
+footer { 
+	text-align: center;
+	border-top: 2px solid #1ab315; /* http://hexna.me/1AB315 */
+	padding-top: 12px;
+	clear: both;
+}
+
+main {
+	font-family: 'Ubuntu', 'Tahoma', sans-serif;
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
+    font-size: .8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main section#right {
+	width: 25%;	
+	float: right;
+    border-left: 4px solid #eee;
+    margin-left: 15px;
+}
+
+main p {
+	padding-left: 10px;
+}
+
+main section {
+	padding: 10px;
+    margin-bottom: 10px;
 }
