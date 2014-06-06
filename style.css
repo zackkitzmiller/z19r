@@ -168,6 +168,7 @@ main p {
         border-left: 4px solid #eee;
         float: right;
         margin-left: 1em;
+	min-height: 10em;
         padding-left: 2em;
         width: 25%; 
     }

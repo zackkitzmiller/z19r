@@ -1,11 +1,19 @@
+/**
+ * Pull contributor info by repo and spit out contributor list to page
+ *
+ * @return {object} API
+ */
 var githubContributors = (function() {
-    var init, _makeAjaxCall, _generateUserLi;
+    var init, _makeAjaxCall, _generateUserLi,
+	contrib_url = '/c/contributors',
+	contrib_container_id = 'contributors';
 
     init = function() {
 	_makeAjaxCall(
-	    'https://api.github.com/repos/zackkitzmiller/z19r/contributors',
+	    // 'https://api.github.com/repos/zackkitzmiller/z19r/contributors',
+	    contrib_url,
 	    function(data) {
-		var $contrib_list = document.getElementById("contributors"),
+		var $contrib_list = document.getElementById(contrib_container_id),
 		    contributor,
 		    new_contrib;
 
@@ -19,6 +27,13 @@ var githubContributors = (function() {
 	);
     };
 
+    /**
+     * Make a simple Ajax call
+     *
+     * @param  {string}   url
+     * @param  {Function} callback
+     * @param  {string}   method   HTTP method
+     */
     _makeAjaxCall = function(url, callback, method) {
 	var xmlhttp = new XMLHttpRequest();
 
@@ -41,6 +56,12 @@ var githubContributors = (function() {
 	xmlhttp.send();
     };
 
+    /**
+     * Generate a user <li> from a github contributor
+     *
+     * @param  {object} contributor Contributor from Github API
+     * @return {DOM node}           <li>
+     */
     _generateUserLi = function(contributor) {
 	var li = document.createElement('li');
 

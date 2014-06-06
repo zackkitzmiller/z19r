@@ -1,0 +1,18 @@
+{
+    "name": "zackkitzmiller/z19r",
+    "description": "Zack Kitzmiller = Bawss",
+    "authors": [
+	{
+	    "name": "Zack Kitzmiller",
+	    "email": "zack@bawss.com"
+	},
+	{
+	    "name": "Matt Stauffer",
+	    "email": "matt@tighten.co"
+	}
+    ],
+    "require": {
+		"slim/slim": "2.*",
+		"knplabs/github-api": "1.2.*"
+	}
+}
