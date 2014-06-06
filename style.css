@@ -104,12 +104,17 @@ hr {
     padding-left: 10px;
     text-transform: lowercase;
 }
+    .contribution-count {
+	color: #ddd;
+	font-style: italic;
+    }
 
 .heart {
     color: red;
     cursor: hand;
 }
 
+/* @todo: Make this cross browser compat */
 .throbbb {
     -webkit-animation: pulsate 2s ease-out;
     -webkit-animation-iteration-count: infinite; 
@@ -139,14 +144,20 @@ main {
     font-size: .8em;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 10px;
     padding-bottom: 10px;
+    padding-top: 10px;
     width: 80%;
+}
+
+main section {
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
 main p {
     padding-left: 10px;
 }
+
 
 .section-left {
 
@@ -162,7 +173,3 @@ main p {
     }
 }
 
-main section {
-    padding: 10px;
-    margin-bottom: 10px;
-}
