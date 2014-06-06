@@ -6,6 +6,7 @@ this website is [open source](https://github.com/zackkitzmiller/z19r)
 
 **contributors:**
 
+- [Matt Stauffer](http://mattstauffer.co/)
 - [Mohammad Gufran](https://github.com/Gufran)
 - [zachary blank](https://github.com/zacharyblank)
 - [mig reyes](http://migreyes.com/)

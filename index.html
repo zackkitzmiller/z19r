@@ -4,25 +4,43 @@
     <title>Zack is a Kitzmiller</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css">
     <link rel="stylesheet" href="style.css">
-
   </head>
+<!--
+
+ ,dPYb,             I8                                        ,dPYb, ,dPYb,                    
+ IP'`Yb             I8                                        IP'`Yb IP'`Yb                    
+ I8  8I      gg  88888888                                gg   I8  8I I8  8I                    
+ I8  8bgg,   ""     I8                                   ""   I8  8' I8  8'                    
+ I8 dP" "8   gg     I8       ,gggg,   ,ggg,,ggg,,ggg,    gg   I8 dP  I8 dP   ,ggg,    ,gggggg, 
+ I8d8bggP"   88     I8      d8"  Yb  ,8" "8P" "8P" "8,   88   I8dP   I8dP   i8" "8i   dP""""8I 
+ I8P' "Yb,   88    ,I8,    dP    dP  I8   8I   8I   8I   88   I8P    I8P    I8, ,8I  ,8'    8I 
+,d8    `Yb,_,88,_ ,d88b, ,dP  ,adP' ,dP   8I   8I   Yb,_,88,_,d8b,_ ,d8b,_  `YbadP' ,dP     Y8,
+88P      Y88P""Y888P""Y888"   ""Y8d88P'   8I   8I   `Y88P""Y88P'"Y888P'"Y88888P"Y8888P      `Y8
+                               ,d8I'                                                           
+                             ,dP'8I                                                            
+                            ,8"  8I                                                            
+                            I8   8I                                                            
+                            `8, ,8I                                                            
+                             `Y8P"                                                             
+-->
   <body>
     <header>
-      <h1>zack kitzmiller &hearts;&rsquo;s u</h1>
+      <h1>zack kitzmiller <span id="throb" class="heart" onClick="document.getElementById('throb').className='heart throbbb'">&hearts;</span>&rsquo;s u</h1>
 
       <hgroup>
-        <h2><a href="http://github.com/zackkitzmiller">github</a></h2>
-        <h2><a href="http://twitter.com/zackkitzmiller">twitter</a></h2>
-        <h2><a href="http://b.z19r.com">blog</a></h2>
+        <h2 class="find-me-elsewhere"><a href="http://github.com/zackkitzmiller">github</a></h2>
+        <h2 class="find-me-elsewhere"><a href="http://twitter.com/zackkitzmiller">twitter</a></h2>
+        <h2 class="find-me-elsewhere"><a href="http://b.z19r.com">blog</a></h2>
       </hgroup>
     </header>
 
     <main>
       <hr>
       <h4>contributors</h4>
-      <ul id="contributors">
+      <ul class="contributors">
+        <li><a href="http://mattstauffer.co/">Matt Stauffer</a></li>
         <li><a href="https://github.com/Gufran">Mohammad Gufran</a></li>
         <li><a href="https://github.com/zacharyblank">zachary blank</a></li>
         <li><a href="http://migreyes.com/">mig reyes</a></li>
