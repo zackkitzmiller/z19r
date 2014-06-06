@@ -98,9 +98,8 @@ hr {
 }
 
 .contributors {
-    border-left: 5px solid #eee;
     line-height: 1.4;
-    margin-left: 20px;
+    margin-left: 5px;
     padding-left: 10px;
     text-transform: lowercase;
 }
@@ -163,7 +162,7 @@ main p {
 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 500px) {
     .section-right {
         border-left: 4px solid #eee;
         float: right;
