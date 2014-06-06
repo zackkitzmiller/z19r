@@ -1,4 +1,7 @@
-* { font-family: 'PT Serif', serif; }
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -53,10 +56,11 @@ table {
  */
 
 body {
-    width: 80%;
-    margin: auto;
+    font-family: 'PT Serif', serif;
     font-size: 18px;
     line-height: 1.3em;
+    margin: auto;
+    width: 80%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -72,9 +76,12 @@ h2 {
 }
 
 a {
-    text-decoration: none;
     color: #4E425F;
+    text-decoration: none;
 }
+    a:hover {
+        color: #ae425f;
+    }
 
 hr {
     border: none;
@@ -82,14 +89,30 @@ hr {
     margin: 20px 0;
 }
 
-hgroup > h2 {
+.find-me-elsewhere {
     display: inline-block;
     margin-right: 10px;
 }
 
-ul#contributors {
-    margin-left: 20px;
+.contributors {
     border-left: 5px solid #eee;
+    margin-left: 20px;
     padding-left: 10px;
-    box-sizing: border-box;
+    text-transform: lowercase;
+}
+
+.heart {
+    color: red;
+    cursor: hand;
+}
+
+.throbbb {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 }
