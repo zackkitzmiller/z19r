@@ -1,7 +1,7 @@
 zack kitzmiller &hearts;&rsquo;s u
 ========
 
-this website is [open source](https://github.com/zackkitzmiller/z19r)
+[this website](http://z19r.com) is [open source](https://github.com/zackkitzmiller/z19r)
 --------------
 
 **contributors:**
