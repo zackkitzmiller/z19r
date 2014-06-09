@@ -105,19 +105,25 @@ hr {
 }
 
 .heart {
+    position: relative;
+    top: 3px;
+    margin-left: -10px;
+    margin-right: -15px;
     color: red;
     cursor: hand;
 }
 
 .throbbb {
-    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation: pulsate 1.8s ease-out;
     -webkit-animation-iteration-count: infinite; 
 }
 
 @-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+    30% {-webkit-transform: scale(1.0, 1.0); opacity: 1;}
+    40% {-webkit-transform: scale(0.9, 0.9); opacity: 1;}
+    50% {-webkit-transform: scale(1.0, 1.0); opacity: 1;}
+    60% {-webkit-transform: scale(0.9, 0.9); opacity: 1;}
+    70% {-webkit-transform: scale(1.0, 1.0); opacity: 1;}
 }
 
 header { 
