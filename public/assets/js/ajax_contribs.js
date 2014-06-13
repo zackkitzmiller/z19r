@@ -5,7 +5,7 @@
  */
 var githubContributors = (function() {
     var init, _makeAjaxCall, _generateUserLi,
-    contrib_url = app_base+'/contributors',
+    contrib_url = base_url + '/contributors',
     contrib_container_id = 'contributors';
 
     init = function() {

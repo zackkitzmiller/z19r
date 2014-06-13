@@ -9,9 +9,14 @@
 	));
 
 	$app->hook('slim.before.dispatch', function() use ($app) {
-		$app_base = str_replace('/index.php', '', $app->request->getUrl() . $app->request->getRootUri());
+		$root_url    = str_replace('/index.php', '', $app->request->getUrl() . $app->request->getRootUri());
+
+		$base_url    = $root_url . '/index.php';
+		$assets_url  = $root_url . '/assets';
+
 		$app->view()->appendData(array(
-			'app_base' => $app_base,
+			'base_url'   => $base_url,
+			'assets_url' => $assets_url,
 		));
 	});
 
