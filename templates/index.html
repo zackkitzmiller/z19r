@@ -6,7 +6,7 @@
 
     <link href="//fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Ubuntu&subset=latin" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="<?= $app_base ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo $app_base ?>/assets/css/style.css">
 </head>
 <!--
 
@@ -28,7 +28,7 @@ I8   8I
 -->
 <body>
     <header>
-        <h1>zack kitzmiller <img src="<?= $app_base ?>/assets/images/kitzmillers_heart_80x33.png" id="throb" class="heart" onClick="document.getElementById('throb').className='heart throbbb'">&rsquo;s u</h1>
+        <h1>zack kitzmiller <img src="<?php echo $app_base ?>/assets/images/kitzmillers_heart_80x33.png" id="throb" class="heart" onClick="document.getElementById('throb').className='heart throbbb'">&rsquo;s u</h1>
 
         <hgroup>
             <h2 class="find-me-elsewhere"><a href="http://github.com/zackkitzmiller">github</a></h2>
@@ -56,8 +56,8 @@ I8   8I
 
     <footer>this website is <a href="http://github.com/zackkitzmiller/z19r">open source</a>. All reasonable PRs will be merged.</footer>
 
-    <script type="text/javascript">var app_base = '<?= $app_base ?>';</script>
-    <script src="<?= $app_base ?>/assets/js/ajax_contribs.js"></script>
+    <script type="text/javascript">var app_base = '<?php echo $app_base ?>';</script>
+    <script src="<?php echo $app_base ?>/assets/js/ajax_contribs.js"></script>
     <script>
     window.addEventListener("resize", function() {
         if ((window.outerHeight - window.innerHeight) > 100) {
