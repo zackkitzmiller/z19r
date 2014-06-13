@@ -1,31 +1,16 @@
 <?php
-	require '../vendor/autoload.php';
-	date_default_timezone_set('America/New_York');
 
-	$app = new \Slim\Slim();
+require '../vendor/autoload.php';
+date_default_timezone_set('America/New_York');
 
-	$app->config(array(
-		'templates.path' => '../templates'
-	));
+$app = new \Slim\Slim(array(
+	'mode' => 'production'
+));
 
-	/**
-	 * Home
-	 */
-	$app->get('/', function() use ($app) {
-		$app->render('index.html');
-	});
+require '../app/config.php';
 
-	/**
-	 * Cache Github Contributors to avoid API Rate Limit
-	 */
-	$app->get('/contributors', function () use ($app) {
-		$app->response->headers->set('Content-Type', 'application/json');
+require '../app/hooks.php';
 
-		$client = new \Github\Client(
-			new \Github\HttpClient\CachedHttpClient(array('cache_dir' => '../cache'))
-		);
+require '../app/routes.php';
 
-		echo json_encode($client->api('repos')->contributors('zackkitzmiller', 'z19r'));
-	});
-
-	$app->run();
+$app->run();
