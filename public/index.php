@@ -8,6 +8,13 @@
 		'templates.path' => '../templates'
 	));
 
+	$app->hook('slim.before.dispatch', function() use ($app) {
+		$app_base = str_replace('/index.php', '', $app->request->getUrl() . $app->request->getRootUri());
+		$app->view()->appendData(array(
+			'app_base' => $app_base,
+		));
+	});
+
 	/**
 	 * Home
 	 */
