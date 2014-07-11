@@ -30,6 +30,7 @@
 
 	$app->get('/lastfm', function() use ($app) {
 		$app->response->headers->set('Content-Type', 'application/json');
+		$app->response->headers->set('Access-Control-Allow-Origin', "*");
 
 		$url = "http://ws.audioscrobbler.com/1.0/user/ZackKitzmiller/recenttracks.rss";
 		$xml = simplexml_load_file($url);
