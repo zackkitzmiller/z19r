@@ -28,7 +28,7 @@
 		echo json_encode($client->api('repos')->contributors('zackkitzmiller', 'z19r'));
 	});
 
-	$app->get('/lastfm', function() use ($app) {
+	$app->get('/lastfm/', function() use ($app) {
 		$app->response->headers->set('Content-Type', 'application/json');
 		$app->response->headers->set('Access-Control-Allow-Origin', "*");
 
