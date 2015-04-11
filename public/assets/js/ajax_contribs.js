@@ -65,7 +65,7 @@ var githubContributors = (function() {
      */
     _generateUserLi = function(contributor) {
         var li = document.createElement('li');
-        li.innerHTML = '<a href="' + contributor.html_url + '">' + contributor.login + '</a> <span class="contribution-count">(' + contributor.contributions + ')</span>';
+        li.innerHTML = '<a href="https://github.com/zackkitzmiller/z19r/commits?author=' + contributor.login + '">' + contributor.login + '</a> <span class="contribution-count">(' + contributor.contributions + ')</span>';
         return li;
     };
 
